@@ -1,0 +1,38 @@
+{
+  "name": "consistency-v1",
+  "aspectRatio": "16:9",
+  "characters": [
+    {
+      "key": "mira",
+      "name": "MIRA",
+      "role": "lead",
+      "description": "Girl, about 10. Small and wiry. Round face, big dark eyes, a gap between her front teeth. Short black bob with a straight fringe and one cowlick sticking up at the back. Oversized striped sweater with sleeves rolled to the elbows, dungaree shorts, scuffed sneakers, a yellow raincoat tied around her waist. Always carries a battered red kite."
+    },
+    {
+      "key": "otto",
+      "name": "OTTO",
+      "role": "supporting",
+      "description": "Man, late 60s. Tall, thin and slightly stooped. Long face, hooked nose, bushy white eyebrows, round wire glasses, neat white moustache. Bald on top with a fringe of white hair. Fisherman's cable-knit jumper, corduroy trousers, wellington boots, a flat cap. Smokes an unlit pipe."
+    },
+    {
+      "key": "bolt",
+      "name": "BOLT",
+      "role": "supporting",
+      "description": "Dog, scruffy medium-sized terrier mix. Wiry coat, one ear up and one ear flopped down, a dark patch over his left eye, a stubby tail. Wears a too-big red collar with a round tag."
+    }
+  ],
+  "shots": [
+    { "shotSize": "Establishing", "cameraAngle": "High angle", "cameraMove": "Static", "chars": [], "action": "A windy seaside cliff at dawn: a lighthouse, a winding path, long grass bent by the wind, gulls overhead." },
+    { "shotSize": "Wide", "cameraAngle": "Eye level", "cameraMove": "Tracking", "chars": ["mira", "bolt"], "action": "MIRA runs along the cliff path holding her red kite high, BOLT bounding beside her." },
+    { "shotSize": "Close-up", "cameraAngle": "Eye level", "cameraMove": "Push in", "chars": ["mira"], "action": "MIRA grins up at the sky, wind in her hair, eyes squinting against the light." },
+    { "shotSize": "Medium", "cameraAngle": "Low angle", "cameraMove": "Static", "chars": ["otto"], "action": "OTTO stands in the lighthouse doorway, pipe in his mouth, shading his eyes with one hand." },
+    { "shotSize": "Two-shot", "cameraAngle": "Eye level", "cameraMove": "Static", "chars": ["mira", "otto"], "action": "MIRA holds out the tangled kite string to OTTO, who peers at it over his glasses." },
+    { "shotSize": "Close-up", "cameraAngle": "Eye level", "cameraMove": "Static", "chars": ["otto"], "action": "OTTO raises one bushy eyebrow, amused, the corner of his moustache lifting." },
+    { "shotSize": "Medium close-up", "cameraAngle": "High angle", "cameraMove": "Static", "chars": ["bolt"], "action": "BOLT sits and tilts his head, floppy ear dangling, tag glinting on his collar." },
+    { "shotSize": "Over-the-shoulder", "cameraAngle": "Over-the-shoulder", "cameraMove": "Static", "chars": ["mira", "otto"], "action": "Over OTTO's shoulder: MIRA watches closely as his old hands untangle the string." },
+    { "shotSize": "Full", "cameraAngle": "Eye level", "cameraMove": "Pan", "chars": ["mira", "otto", "bolt"], "action": "All three stand on the cliff edge; OTTO launches the kite while MIRA holds the spool and BOLT barks." },
+    { "shotSize": "Wide", "cameraAngle": "Worm's eye", "cameraMove": "Tilt", "chars": [], "action": "The red kite soars high above the lighthouse against big clouds." },
+    { "shotSize": "Medium", "cameraAngle": "Eye level", "cameraMove": "Static", "chars": ["mira", "bolt"], "action": "MIRA sits in the grass hugging BOLT, both looking up at the sky." },
+    { "shotSize": "Close-up", "cameraAngle": "Eye level", "cameraMove": "Static", "chars": ["otto"], "action": "OTTO smiles softly, taking off his glasses to wipe them." }
+  ]
+}

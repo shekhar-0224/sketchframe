@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/*
+ * SketchFrame retro theme: 1-bit black & white, classic-Mac windows and 3D
+ * keyboard keycaps for every control. All colour lives in these tokens.
+ */
+:root {
+  --paper: #ffffff;
+  --paper-2: #ededed;
+  --paper-3: #d6d6d6;
+  --card: #ffffff;
+  --ink: #000000;
+  --graphite: #3b3b3b;
+  --pencil: #8c8c8c;
+  --rule: #c4c4c4;
+  --accent: #000000;
+  --accent-ink: #000000;
+  --blue: #000000;
+  --highlight: #d9d9d9;
+  --ok: #000000;
+  --key-face: #fbfbfb;
+  --key-skirt: #c9c9c9;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-graphite: var(--graphite);
+  --color-pencil: var(--pencil);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-blue: var(--blue);
+  --color-highlight: var(--highlight);
+  --color-ok: var(--ok);
+  --font-sans: var(--nf-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--nf-display), var(--nf-body), monospace;
+  --font-hand: var(--nf-display), monospace;
+  --font-mono: var(--nf-mono), ui-monospace, monospace;
+  --shadow-ink: 3px 3px 0 0 var(--ink);
+  --shadow-ink-sm: 1px 2px 0 0 var(--ink);
+  --shadow-lift: 3px 3px 0 0 var(--ink);
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  /* Faint dot-grid, like a storyboard pad. */
+  /* 1-bit dither dots, like an old Mac desktop. */
+  background-image: radial-gradient(rgba(0, 0, 0, 0.16) 1px, transparent 1.2px);
+  background-size: 6px 6px;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--highlight);
+  color: var(--ink);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* Hand-drawn underline used for active tabs and headings. */
+.scribble {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 8' preserveAspectRatio='none'%3E%3Cpath d='M1 5.5C20 2 40 7 60 4s40-1 59 1' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.45em;
+  padding-bottom: 0.15em;
+}
+
+.paper-card {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+}
+
+/* 3D keycap, modelled on a desktop keyboard: light face, grey skirt, black base. */
+.key {
+  background: linear-gradient(180deg, #ffffff 0%, var(--key-face) 60%, #efefef 100%);
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  box-shadow: inset 0 -4px 0 0 var(--key-skirt), inset 0 1.5px 0 0 #fff, 0 3px 0 0 var(--ink);
+  transition: transform 60ms ease, box-shadow 60ms ease;
+}
+.key:hover:not(:disabled) {
+  background: #fff;
+}
+.key:active:not(:disabled),
+.key-down {
+  transform: translateY(2px);
+  box-shadow: inset 0 -2px 0 0 var(--key-skirt), 0 1px 0 0 var(--ink);
+}
+.key-dark {
+  background: linear-gradient(180deg, #3a3a3a 0%, #111 55%, #000 100%);
+  color: #fff;
+  box-shadow: inset 0 -4px 0 0 #444, inset 0 1.5px 0 0 #555, 0 3px 0 0 var(--ink);
+}
+.key-dark:hover:not(:disabled) {
+  background: linear-gradient(180deg, #4a4a4a 0%, #1b1b1b 55%, #000 100%);
+}
+.key-dark:active:not(:disabled),
+.key-dark.key-down {
+  box-shadow: inset 0 -2px 0 0 #444, 0 1px 0 0 var(--ink);
+}
+
+/* Classic Mac title bar pinstripes. */
+.titlebar {
+  background: repeating-linear-gradient(180deg, var(--ink) 0 1.5px, transparent 1.5px 4px) center / calc(100% - 16px) 13px no-repeat, var(--card);
+}
+
+/* Pencil shimmer while a panel is being drawn. */
+@keyframes sketching {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.sketching {
+  background: repeating-linear-gradient(-45deg, transparent 0 6px, rgba(0, 0, 0, 0.09) 6px 8px),
+    linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.12) 50%, transparent 100%);
+  background-size: auto, 200% 100%;
+  animation: sketching 1.6s linear infinite;
+}
+
+@keyframes pencil-wiggle {
+  0%, 100% { transform: rotate(-8deg) translateX(0); }
+  50% { transform: rotate(6deg) translateX(6px); }
+}
+.pencil-wiggle {
+  animation: pencil-wiggle 0.9s ease-in-out infinite;
+  transform-origin: 20% 80%;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sketching, .pencil-wiggle { animation: none; }
+}

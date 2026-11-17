@@ -1,0 +1,91 @@
+{
+  "title": "The Last Donut",
+  "logline": "Friday, 4:59 PM. One donut left in the office. June will do anything to get it — and so will her boss.",
+  "aspectRatio": "16:9",
+  "voices": { "NARRATOR": "zeus", "OTTO": "orion", "JUNE": "thalia" },
+  "characters": [
+    {
+      "key": "june",
+      "name": "JUNE",
+      "role": "lead",
+      "description": "Woman, late 20s, an office worker with big energy. Short dark curly hair tied back with a bandana, freckles, strong expressive eyebrows. Oversized striped sweater, loose trousers, white sneakers, an ID lanyard round her neck."
+    },
+    {
+      "key": "otto",
+      "name": "OTTO",
+      "role": "lead",
+      "description": "Man, late 60s, the boss. Tall, thin and slightly stooped. Long face, hooked nose, bushy white eyebrows, round wire glasses, neat white moustache. Bald on top with a fringe of white hair. Rumpled suit with a loose striped tie and a coffee mug that says BOSS."
+    },
+    {
+      "key": "bolt",
+      "name": "BOLT",
+      "role": "supporting",
+      "description": "Dog, the office dog. Scruffy medium-sized terrier mix with a wiry coat, one ear up and one ear flopped down, a big dark patch over his left eye, a stubby tail. Wears a too-big collar with a round tag."
+    }
+  ],
+  "shots": [
+    {
+      "shotSize": "Wide", "cameraAngle": "Eye level", "cameraMove": "Push in", "chars": [], "interior": true,
+      "scene": "INT. OPEN-PLAN OFFICE - 4:59 PM.",
+      "action": "An empty office kitchen counter. On it, one single glazed donut on a plate, lit by a dramatic beam of light like a treasure. A wall clock reads 4:59.",
+      "motion": "slow dramatic push in toward the single donut, the light beam glowing, dust sparkling in the air",
+      "speaker": "NARRATOR", "dialogue": "Friday. Four fifty-nine. One donut left."
+    },
+    {
+      "shotSize": "Close-up", "cameraAngle": "Eye level", "cameraMove": "Static", "chars": ["june"], "interior": true,
+      "scene": "INT. OPEN-PLAN OFFICE.",
+      "action": "JUNE slowly rises into view from behind a cubicle wall, only her eyes and eyebrows showing, eyes narrowed with fierce determination.",
+      "motion": "the woman slowly rises from behind the cubicle wall, eyes narrowing, eyebrows lowering",
+      "speaker": "JUNE", "dialogue": "Mine."
+    },
+    {
+      "shotSize": "Wide", "cameraAngle": "Low angle", "cameraMove": "Tracking", "chars": ["june"], "interior": true,
+      "scene": "INT. OPEN-PLAN OFFICE.",
+      "action": "JUNE army-crawls fast across the office carpet under a row of desks, elbows pumping, like a commando on a mission.",
+      "motion": "the woman crawls quickly forward on her elbows under the desks like a commando",
+      "speaker": "NARRATOR", "dialogue": "She had trained for this."
+    },
+    {
+      "shotSize": "Medium", "cameraAngle": "Eye level", "cameraMove": "Static", "chars": ["june"], "interior": true,
+      "scene": "INT. OPEN-PLAN OFFICE.",
+      "action": "JUNE leaps over a robot vacuum cleaner in a dramatic action-movie jump, arms out, sweater flying, the little robot rolling underneath her.",
+      "motion": "the woman leaps over the robot vacuum in slow motion, arms out, the robot rolls underneath",
+      "speaker": "JUNE", "dialogue": "Not today, robot."
+    },
+    {
+      "shotSize": "Insert", "cameraAngle": "Eye level", "cameraMove": "Push in", "chars": [], "interior": true,
+      "scene": "INT. OFFICE KITCHEN.",
+      "action": "Extreme close-up of the donut on its plate as two hands reach for it from opposite sides — a young woman's hand from the left, an old man's hand with a shirt cuff from the right.",
+      "motion": "two hands reach in from opposite sides and both grab the donut at the same moment",
+      "speaker": "NARRATOR", "dialogue": "Then..."
+    },
+    {
+      "shotSize": "Two-shot", "cameraAngle": "Eye level", "cameraMove": "Push in", "chars": ["june", "otto"], "interior": true,
+      "scene": "INT. OFFICE KITCHEN.",
+      "action": "JUNE and OTTO face each other across the counter, both gripping the same donut, glaring like gunslingers in a western standoff.",
+      "motion": "the two of them glare at each other, both tugging the donut, eyes narrowing, tension rising",
+      "speaker": "OTTO", "dialogue": "Let go, June."
+    },
+    {
+      "shotSize": "Medium", "cameraAngle": "Low angle", "cameraMove": "Static", "chars": ["bolt"], "interior": true,
+      "scene": "INT. OFFICE KITCHEN.",
+      "action": "BOLT the dog leaps up high between two people at a kitchen counter, jaws wide open, ears flying, aiming for the donut.",
+      "motion": "the dog leaps up high, jaws open, ears flapping, and snatches the donut",
+      "speaker": "JUNE", "dialogue": "Bolt, NO!"
+    },
+    {
+      "shotSize": "Wide", "cameraAngle": "Eye level", "cameraMove": "Pan", "chars": ["june", "otto", "bolt"], "interior": true,
+      "scene": "INT. OPEN-PLAN OFFICE.",
+      "action": "BOLT sprints away across the office with the donut in his mouth while JUNE and OTTO crash into each other chasing him, papers flying everywhere.",
+      "motion": "the dog runs away with the donut, the two people collide behind him, papers fly into the air",
+      "speaker": "NARRATOR", "dialogue": "Total chaos."
+    },
+    {
+      "shotSize": "Medium", "cameraAngle": "Eye level", "cameraMove": "Push in", "chars": ["otto", "june"], "interior": true,
+      "scene": "INT. BOSS'S OFFICE.",
+      "action": "OTTO sits at his desk and sheepishly slides open a drawer full of donuts. JUNE stands beside him, staring at the drawer, jaw dropped in outrage.",
+      "motion": "the old man slowly slides open the drawer revealing many donuts, the woman's jaw drops",
+      "speaker": "OTTO", "dialogue": "I have a whole box."
+    }
+  ]
+}
